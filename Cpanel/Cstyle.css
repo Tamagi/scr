@@ -1,0 +1,1669 @@
+@font-face {
+ font-family: Proxima Nova;
+  src: url(font/ProximaNova-Regular.ttf);
+}
+@font-face {
+ font-family: Acumin Light;
+  src: url(font/ACUMINPROCONDLIGHT.ttf);
+}
+@font-face {
+ font-family: AcuminBlack;
+  src: url(font/AcuminProCondBlack.ttf);
+}
+@font-face {
+ font-family: Proxima Novasemi;
+  src: url(font/Proxima-Nova-Semibold.ttf);
+}
+@font-face {
+ font-family: Proxima Novabold;
+  src: url(font/ProximaNovaExtrabold.ttf);
+}
+@font-face {
+ font-family: gothambold;
+  src: url(font/GOTHAM-BOLD.ttf);
+}
+@font-face {
+ font-family: gothammed;
+  src: url(font/GOTHAM-MEDIUM.ttf);
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800,900');
+
+.responsivecp{
+    display: none;
+}
+@media only screen and (max-width:1300px){
+    .responsivecp{
+        display: block;
+    }
+    .container-login{
+        display: none;
+    }
+    .container-index{
+        display: none;
+    }
+    .container-academy-management{
+        display: none;
+    }
+    .container-academy-management-detail{
+        display: none;
+    }
+    .container-event-management{
+        display: none;
+    }
+    .container-event-management-detail{
+        display: none;
+    }
+    .container-shop-management{
+        display: none;
+    }
+    .container-shop-management-detail{
+        display: none;
+    }
+    .container-transaction-management{
+        display: none;
+    }
+    .container-transaction-management-detail{
+        display: none;
+    }
+    .container-user-management{
+        display: none;
+    }
+    .container-user-management-detail{
+        display: none;
+    }
+}
+/*-----------------------text-style---------------------------*/
+.menu-left-content-title{
+    font-family: Montserrat;
+    font-size: 80px;
+    font-weight: 700;
+}
+.menu-left-content-welcome{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: -10px;
+}
+.menu-left-content-user-text{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    color: darkgray;
+}
+.menu-left-content-footer p{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+.menu-left-content-footer a{
+    color: white;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+}
+.menu-left-content-footer a:hover{
+    color: #58F9E9;
+    text-decoration: none;
+    cursor: default;
+}
+.menu-left-logout{
+    position: absolute;
+    bottom: 200px;
+}
+.menu-left-logout a{
+    font-family: Proxima Novasemi;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: white;
+}
+.menu-left-logout a:hover{
+    text-decoration: none;
+    color: #58F9E9;
+    cursor: default;
+}
+.menu-left-content-panel a{
+    font-family: Proxima Novasemi;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: white;
+}
+.menu-left-content-panel a:hover{
+    text-decoration: none;
+    color: #58F9E9;
+    cursor: default;
+}
+.login-content-title{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 60px;
+   
+}
+.index-single-box-title{
+    font-family: Proxima Novabold;
+    font-size: 25px;
+    margin: 0;
+    margin-top: 20px;
+    text-transform: uppercase;
+     letter-spacing: 4px;
+}
+.index-single-box-subtitle{
+    font-family: Proxima Novasemi;
+    font-size: 25px;
+    text-transform: uppercase;
+     letter-spacing: 4px;
+}
+.index-content-box-container a{
+    color: black;
+    text-decoration: none;
+}
+.index-content-box-container a:hover{
+    color: white;
+    fill:white;
+    text-decoration: none;
+    transition: all 0.3s ;
+}
+.header-left-content{
+    font-family: gothammed;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    width: 100%;
+}
+.header-left-content a{
+    color: black;
+    cursor: auto;
+}
+.header-left-content a:hover{
+    color: #58F9E9;
+    cursor: auto;
+    text-decoration: none;
+}
+.panel-active a:hover{
+    color: black;
+}
+.header-right-content{
+    font-family: gothammed;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.contact-content-box-title{
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: capitalize;
+    line-height: 50px;
+    width: 170px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.contact-content-box-left p{
+    font-family: Proxima novasemi;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+.contact-content-box-right input[type=text]{
+    font-family: Proxima novasemi;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: 2px solid black;
+    width: 300px;
+    height: 30px;
+    padding: 0px 0px 10px 10px;
+    outline: none;
+}
+.contact-content-box-right textarea{
+    font-family: Proxima novasemi;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    width: 300px;
+    height: 200px;
+    padding: 0px 0px 10px 10px;
+    resize: none;
+    margin-top: 20px;
+    outline: none;
+}
+.contact-content-box-form input[type=submit]{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    border: 3px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background-color: transparent;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    outline: none;
+}
+.contact-content-box-form input[type=submit]:hover{
+    background-color: #58F9E9;
+}
+.management-content-header-title{
+    font-family: Proxima Novabold;
+    font-size: 25px;
+    margin: 0;
+    margin-top: 20px;
+    text-transform: uppercase;
+     letter-spacing: 4px;
+}
+.management-content-header-subtitle{
+    font-family: Proxima Novasemi;
+    font-size: 25px;
+    text-transform: uppercase;
+     letter-spacing: 4px;
+    margin-top: -10px;
+}
+.management-content-sort{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.management-content-sort select{
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding-left: 15px;
+    margin-right: 40px;
+    outline: none;
+}
+.management-content-button input[type=submit]{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    border: 3px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background-color: transparent;
+    height: 30px;
+    text-align: center;
+    outline: none;
+    padding: 0px 15px 0px 15px;
+    opacity: 0.5;
+}
+.management-content-search-panel{
+    position: relative;
+    font-family: Proxima novasemi;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.management-content-search-panel input[type=text]{
+    font-family: Proxima novasemi;
+    font-size: 16px;
+    letter-spacing: 4px;
+    width: 250px;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-image: url(img/Search-Icon.png);
+    background-repeat: no-repeat;
+    background-position: 220px;
+    outline: none;
+    padding-left: 10px;
+}
+.management-content-search-panel input[type=submit]{
+    position: absolute;
+    right: 5px;
+    opacity: 0;
+}
+.user-management-table-1 th{
+    border: 0;  
+    border-bottom: 3px solid black;
+    text-align: center;
+    font-family: Proxima novasemi;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.user-management-table-1 a{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px 10px 20px;
+    color: black;
+}
+.user-management-table-1 a:hover{
+    text-decoration: none;
+    color: #58F9E9;
+}
+.shop-management-table-1 th{
+    border: 0;  
+    border-bottom: 3px solid black;
+    text-align: center;
+    font-family: Proxima novasemi;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.shop-management-table-1 a{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px 10px 20px;
+    color: black;
+}
+.shop-management-table-1 a:hover{
+    text-decoration: none;
+    color: #58F9E9;
+}
+.academy-management-table-1 th{
+    border: 0;  
+    border-bottom: 3px solid black;
+    text-align: center;
+    font-family: Proxima novasemi;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.academy-management-table-1 a{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px 10px 20px;
+    color: black;
+}
+.academy-management-table-1 a:hover{
+    text-decoration: none;
+    color: #58F9E9;
+}
+.news-management-table-1 th{
+    border: 0;  
+    border-bottom: 3px solid black;
+    text-align: center;
+    font-family: Proxima novasemi;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.news-management-table-1 a{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px 10px 20px;
+    color: black;
+}
+.news-management-table-1 a:hover{
+    text-decoration: none;
+    color: #58F9E9;
+}
+.event-management-table-1 th{
+    border: 0;  
+    border-bottom: 3px solid black;
+    text-align: center;
+    font-family: Proxima novasemi;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.event-management-table-1 a{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px 10px 20px;
+    color: black;
+}
+.event-management-table-1 a:hover{
+    text-decoration: none;
+    color: #58F9E9;
+}
+.transaction-management-table-1 th{
+    border: 0;  
+    border-bottom: 3px solid black;
+    text-align: center;
+    font-family: Proxima novasemi;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.transaction-management-table-1 a{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px 10px 20px;
+    color: black;
+}
+.transaction-management-table-1 a:hover{
+    text-decoration: none;
+    color: #58F9E9;
+}
+.management-content-box-title p{
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+.management-content-box-panel-left p{
+    position: relative;
+    font-family: Proxima novasemi;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    height: 40px;
+}
+.management-content-box-bottom p{
+    position: relative;
+    font-family: Proxima novasemi;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    height: 40px;
+}
+.management-content-box-panel-right input[type=text]{
+    font-family: Proxima novasemi;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    border: 0;
+    border-bottom: 2px solid black;
+    width: 300px;
+    height: 40px;
+    padding: 0px 0px 10px 10px;
+    outline: none;
+}
+.management-content-box-panel-right input[type=number]{
+    font-family: Proxima novasemi;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    border: 0;
+    border-bottom: 2px solid black;
+    width: 300px;
+    height: 40px;
+    padding: 0px 0px 10px 10px;
+    outline: none;
+}
+.management-content-box-panel-right input[type=password]{
+    font-family: Proxima novasemi;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    border: 0;
+    border-bottom: 2px solid black;
+    width: 300px;
+    height: 30px;
+    padding: 0px 0px 10px 10px;
+    outline: none;
+}
+.management-content-box-panel-right input[type=date]{
+    font-family: Proxima novasemi;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    border: 0;
+    border-bottom: 2px solid black;
+    width: 300px;
+    height: 30px;
+    padding: 0px 0px 10px 10px;
+    outline: none;
+}
+.management-content-box-panel-right input[type=time]{
+    font-family: Proxima novasemi;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    border: 0;
+    border-bottom: 2px solid black;
+    width: 131.5px;
+    height: 30px;
+    padding: 0px 0px 10px 0px;
+    outline: none;
+}
+.management-content-box-panel-right select{
+    font-family: Proxima novasemi;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    border: 0;
+    border-bottom: 2px solid black;
+    width: 300px;
+    height: 30px;
+    padding: 0px 0px 10px 10px;
+    outline: none;
+}
+.management-content-box-panel-right textarea{
+    font-family: Proxima novasemi;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    border: 0;
+    border-bottom: 2px solid black;
+    width: 300px;
+    height: 100px;
+    padding: 0px 0px 10px 10px;
+    resize: none;
+    outline: none;
+}
+.management-content-box-title h1{
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 45px;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+.management-content-box-image-button p{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 0px 10px 20px;
+    color: black;
+    width: 160px;
+    cursor:pointer;
+}
+.management-content-box-image-button input[type=file]{
+    font-size: 25px;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 165px;
+    max-width: 150px;
+    opacity: 0;
+    cursor:pointer;
+}
+.management-content-box-footer input[type=submit]{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    border: 3px solid black;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background-color: transparent;
+    height: 30px;
+    text-align: center;
+    outline: none;
+    padding: 0px 15px 0px 15px;
+    width: 100px;
+    cursor:pointer;
+}
+.add-new{
+    width: 150px;
+    border: 3px solid #4CCC86;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background-color: transparent;
+    height: 30px;
+    text-align: center;
+    outline: none;
+    padding: 4px 15px;
+}
+/*------------------------menu-left---------------------------*/
+.container-login{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 840px;
+    min-width: 1280px;
+    max-height: 1080px;
+    max-width: 1920px;
+    background-color: white;
+}
+.menu-left-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 22%;
+    background-color: #303030;
+    z-index: 1000;
+    min-height: 840px;
+    max-width: 422px;
+    min-width: 360px;
+    color: white;
+    float: left;
+}
+.menu-left-content-container{
+    position: relative;
+    padding: 60px 40px 60px 60px;
+    height: 100%;
+}
+.menu-left-content-header{
+    padding-top: 100px;
+    margin-bottom: 40px;
+}
+.menu-left-content-footer{
+    position: absolute;
+    bottom: 60px;
+}
+.menu-left-content-panel{
+    position: absolute;
+    top: 50%;
+}
+/*-----------------------------header menu--------------------*/
+.header-menu{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100px;
+    max-width: 1920px;
+    padding-left: 430px;
+}
+.header-container{
+    position: relative;
+    height: 100%;
+    padding: 60px 5% 10px 5%;
+}
+.header-left{
+    width: 60%;
+    position: relative;
+    float: left;
+}
+.header-right{
+    width: 40%;
+    position: relative;
+    float: right;
+    text-align: right;
+}
+/*------------------------------login home--------------------*/
+.login-content-container{
+    position: relative;
+    width: 78%;
+    margin-left: 22%;
+    height: 100%;
+    max-height: 1080px;
+    min-height: 800px;
+}
+.login-content-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.icon-box{
+    width: 500px;
+    height: 40px;
+    border-bottom: 2px solid #4F4F4F;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+.icon{
+    float: left;
+    width: 40px;
+    padding-left: 10px;
+}
+.icon-text{
+    float: left;
+    width: 400px;
+    padding-left: 10px;
+}
+.icon-text input[type=text]{
+    border: none;
+    font-family: Proxima Novabold;
+    font-size: 20px;
+    width: 350px;
+    padding-left: 10px;
+}
+.icon-text input[type=password]{
+    border: none;
+    font-family: Proxima Novabold;
+    font-size: 20px;
+    width: 350px;
+    padding-left: 10px;
+}
+.forgotpassword{
+    font-size: 19px;
+    font-family: Proxima Novabold;
+    color: black;
+    text-decoration: none;
+}
+.forgotpassword:hover{
+    color: black;
+    text-decoration: none;
+}
+.login-button{
+    text-align: center;
+    width: 100%;
+}
+.login{
+    margin-top: 40px;
+    border: 5px solid black;
+    border-radius: 50px;
+    width: 220px;
+    height: 55px;
+    background-color: transparent;
+    font-family: Proxima Nova;
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;   
+    margin-bottom: 20px;
+    outline: none;
+}
+/*----------------------------index----------------------------*/
+.container-index{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-height: 1080px;
+    max-width: 1920px;
+    background-color: white;
+}
+.index-content-container{
+    position: relative;
+    width: 78%;
+    margin-left: 22%;
+    height: 100%;
+    max-height: 1080px;
+    min-height: 800px;
+}
+.index-content-box-container{
+    padding: 120px;
+    height: 100%;
+}
+.index-content-single-box{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    float: left;
+    margin: 20px;
+    background-color: #EDEDED;   
+    padding:70px;
+    padding-bottom: 40px;
+
+}
+.index-content-single-box-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.index-content-single-box-isi{
+    position: absolute;
+    bottom: 0;
+}
+/*-------------------------contactus---------------------------*/
+.container-contact{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-height: 1080px;
+    max-width: 1920px;
+    background-color: white;
+}
+.contact-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    height: 100%;
+    max-height: 1080px;
+    min-height: 800px;
+}
+.contact-content-box{
+    width: 550px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.contact-content-box-left{
+    width: 35%;
+    float: left;
+}
+.contact-content-box-right{
+    width: 65%;
+    float: left;
+}
+/*------------------------management-flex---------------------*/
+.management-content-search-container{
+    margin-top: 10px;
+    height: 50px;
+    border: 3px solid black;
+    border-left: 0;
+    border-right: 0;
+    padding-top: 6.4px;
+    text-align: right;
+}
+.management-content-sort-container{
+    margin-top: 60px;
+    height: 40px;
+}
+.management-content-sort{
+    float: left;
+    width: 550px;
+}
+.management-content-button{
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 195px;
+}
+.management-content-box-split{
+    margin-top: 80px;
+}
+.management-content-box-left{
+    position: relative;
+    width: 600px;
+    float: left;
+}
+.management-content-box-right{
+    position: relative;
+    width: 600px;
+    float: left;
+}
+.management-content-box-bottom {
+    position: relative;
+    width: 1200px;
+    float: left;
+}
+.management-content-box-title{
+    width: 100%;
+    height: 140px;
+}
+.management-content-box-panel{
+    margin-top: 40px;
+}
+.management-content-box-panel-left{
+    width: 32%;
+    float: left;
+}
+.management-content-box-panel-right{
+    width: 68%;
+    float: left;
+}
+.management-content-box-image-split{
+    position: relative;
+    height: 140px;
+}
+.management-content-box-image-left{
+    width: 140px;
+    height: 140px;
+    float: left;
+    position: relative
+}
+.management-content-box-image-container{
+    position: absolute;
+}
+.edite{
+    width: 140px;
+    height: 140px;
+}
+.management-content-box-image-big{
+    margin-top: 40px;
+    position: relative;
+    width: 300px;
+    height: 180px;
+}
+.management-content-box-image-big-container{
+    position: absolute;
+}
+.management-content-box-image-big-container img{
+    width: 300px;
+    height: 180px;
+}
+.management-content-box-image-right{
+    width: 200px;
+    height: 140px;
+    float: left;
+    margin-left: 20px;
+}
+.management-content-box-footer{
+    text-align: center;
+    margin: 60px 0px 80px 0px;
+    float: left;
+    width: 100%;
+}
+/*------------------------user-management----------------------*/
+.container-user-management{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background-color: white;
+}
+.user-management-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    min-height: 800px;
+}
+.user-management-content-box{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.user-management-table-1{
+    width: 100%;
+    border: 0;
+    text-align: center;
+}
+.user-management-table-1 td{
+    background-color: #EFEFEF;
+    overflow: hidden;
+    text-overflow:ellipsis; 
+}
+.table-checkbox{
+    width: 20px;
+    height: 20px;
+}
+/*------------------------user-management-detail---------------*/
+.container-user-management-detail{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background-color: white;
+}
+.user-management-detail-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    min-height: 800px;
+}
+.user-management-detail-content-box{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+/*------------------------shop-management----------------------*/
+.container-shop-management{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background-color: white;
+}
+.shop-management-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    min-height: 800px;
+}
+.shop-management-content-box{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.shop-management-table-1{
+    width: 100%;
+    border: 0;
+    text-align: center;
+}
+.shop-management-table-1 td{
+    background-color: #EFEFEF;
+    overflow: hidden;
+    text-overflow:ellipsis; 
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: 60px;
+}
+.table-checkbox{
+    width: 20px;
+    height: 20px;
+}
+/*------------------------shop-management-detail---------------*/
+.container-shop-management-detail{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background-color: white;
+}
+.shop-management-detail-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    min-height: 800px;
+}
+.shop-management-detail-content-box{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+/*----------------------academy-management----------------------*/
+.container-academy-management{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background-color: white;
+}
+.academy-management-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    min-height: 800px;
+}
+.academy-management-content-box{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.academy-management-table-1{
+    width: 100%;
+    border: 0;
+    text-align: center;
+}
+.academy-management-table-1 td{
+    background-color: #EFEFEF;
+    overflow: hidden;
+    text-overflow:ellipsis; 
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: 60px;
+}
+.table-checkbox{
+    width: 20px;
+    height: 20px;
+}
+/*------------------------academy-management-detail---------------*/
+.container-academy-management-detail{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background-color: white;
+}
+.academy-management-detail-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    min-height: 800px;
+}
+.academy-management-detail-content-box{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+/*----------------------news-management----------------------*/
+.container-news-management{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background-color: white;
+}
+.news-management-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    min-height: 800px;
+}
+.news-management-content-box{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.news-management-table-1{
+    width: 100%;
+    border: 0;
+    text-align: center;
+}
+.news-management-table-1 td{
+    background-color: #EFEFEF;
+    overflow: hidden;
+    text-overflow:ellipsis; 
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: 60px;
+}
+.table-checkbox{
+    width: 20px;
+    height: 20px;
+}
+/*------------------------news-management-detail---------------*/
+.container-news-management-detail{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background-color: white;
+}
+.news-management-detail-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    min-height: 800px;
+}
+.news-management-detail-content-box{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+/*----------------------event-management----------------------*/
+.container-event-management{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background-color: white;
+}
+.event-management-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    min-height: 800px;
+}
+.event-management-content-box{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.event-management-table-1{
+    width: 100%;
+    border: 0;
+    text-align: center;
+}
+.event-management-table-1 td{
+    background-color: #EFEFEF;
+    overflow: hidden;
+    text-overflow:ellipsis; 
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: 60px;
+}
+.table-checkbox{
+    width: 20px;
+    height: 20px;
+}
+/*------------------------event-management-detail---------------*/
+.container-event-management-detail{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background-color: white;
+}
+.event-management-detail-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    min-height: 800px;
+}
+.event-management-detail-content-box{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+/*----------------------transaction-management----------------------*/
+.container-transaction-management{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background-color: white;
+}
+.transaction-management-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    min-height: 800px;
+}
+.transaction-management-content-box{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.transaction-management-table-1{
+    width: 100%;
+    border: 0;
+    text-align: center;
+}
+.transaction-management-table-1 td{
+    background-color: #EFEFEF;
+    overflow: hidden;
+    text-overflow:ellipsis; 
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: 60px;
+}
+.table-checkbox{
+    width: 20px;
+    height: 20px;
+}
+/*------------------------transaction-management-detail---------------*/
+.container-transaction-management-detail{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    min-width: 1280px;
+    max-width: 1920px;
+    background-color: white;
+}
+.transaction-management-detail-content-container{
+    position: relative;
+    margin-top: 140px;
+    margin-left: 420px;
+    min-height: 800px;
+}
+.transaction-management-detail-content-box{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.transaction-management-content-checkout-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.transaction-management-content-checkout-single{
+    width: 100%;
+    position: relative;
+    height: 120px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.transaction-management-content-checkout-single-left{
+    width: 350px;
+    height: 100%;
+    float:left;
+    padding: 20px;
+}
+.transaction-management-content-checkout-single-left img{
+    width: 310px;
+}
+.transaction-management-content-checkout-single-right{
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 20px;
+}
+.transaction-management-content-checkout-single-left-box{
+    width: 520px;
+    float: left;
+}
+.transaction-management-content-checkout-single-middle-box{
+    width: 350px;
+    height: 100%;
+    float: left;
+}
+.transaction-management-content-checkout-single-right-box{
+    width: 250px;
+    float: left;
+    text-align: right;
+}
+.transaction-management-content-checkout-single-middle-box p{
+    margin: 0;
+    float: left;
+    margin-left: -3px;
+}
+.transaction-management-content-checkout-header-text{
+    width: 100%;
+    position: relative;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.transaction-management-content-checkout-header-text p{
+    width: 33.3%;
+    float: left;
+    font-size: 16px;
+    font-family: Proxima Nova;
+    letter-spacing: 10px;
+    margin: 0;
+    text-transform: uppercase;
+    cursor:default;
+}
+.transaction-management-content-checkout-single-right-split-size{
+    width: 160px;
+    height: 30px;
+    position: relative;
+    float: left;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+.transaction-management-content-checkout-size-text{
+    width: 65px;
+}
+.transaction-management-content-checkout-size{
+    width: 95px;
+}
+.transaction-management-content-checkout-single-right-split-qty{
+    width: 160px;
+    height: 30px;
+    position: relative;
+    float: left;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+.transaction-management-content-checkout-qty-text{
+    width: 65px;
+}
+.transaction-management-content-checkout-qty{
+    width: 95px;
+}
+.transaction-management-content-checkout-shipping-container{
+    margin-bottom: 60px;
+}
+.transaction-management-content-checkout-shipping-split{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 160px;
+}
+.transaction-management-content-checkout-shipping-split-left{
+    width: 400px;
+    float: left;
+    height: 160px;
+}
+.transaction-management-content-checkout-shipping-split-right{
+    width: 760px;
+    float: left;
+    height: 160px;
+}
+.transaction-management-content-checkout-summary-split{
+    height: 160px;
+}
+.transaction-management-content-checkout-summary-split-left{
+    width: 400px;
+    float: left;
+    height: 160px;
+}
+.transaction-management-content-checkout-summary-split-right{
+    width: 760px;
+    float: left;
+    height: 160px;
+}
+.transaction-management-content-checkout-summary-container{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 60px;
+}
+.transaction-management-content-checkout-payment{
+    position: relative;
+    width: 100%;
+}
+.transaction-management-content-checkout-payment img{
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,0%);
+}
+.transaction-management-content-checkout-subtotal-text{
+    font-family: Acumin Light;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: left;
+    margin: 0;
+    color: black;
+    cursor:default;
+    margin-bottom: 10px;
+}
+.transaction-management-content-checkout-subtotal{
+    text-align: right;
+    font-family: AcuminBlack;
+    font-size: 44px;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-top: -11px;
+    cursor:default;
+    margin-bottom: 10px;
+}
+.transaction-management-content-checkout-subtotal-text-r{
+    font-family: AcuminBlack;
+    font-size: 26px;
+    letter-spacing: 1px;
+    height: 30px;
+    margin-top: 9px;
+    cursor:default;
+}
+.transaction-management-content-checkout-size-text-academy{
+    font-family: AcuminBlack;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    border: 3px solid black;
+    cursor: default;
+    width: 157px;
+}
+.transaction-management-content-checkout-button input[type=submit]{
+    font-family: Proxima Nova;
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 60px;
+    color: black;
+    cursor:default;
+    background-color: transparent;
+    border: 0;
+}
+.transaction-management-content-checkout-button input[type=button]{
+    font-family: Proxima Nova;
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 60px;
+    color: black;
+    cursor:default;
+    background-color: transparent;
+    border: 0;
+}
+.transaction-management-content-checkout-button a{
+    color: black;
+}
+.transaction-management-content-checkout-button a:hover{
+    color: black;
+    text-decoration: none;
+}
+.transaction-management-content-checkout-stock{
+    font-family: Proxima Nova;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #414042;
+    opacity: 0.5;
+    margin-bottom: 20px;
+    cursor:default;
+}
+.transaction-management-content-checkout-origin{
+    font-family: Proxima Nova;
+    font-size: 16px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+    cursor:default;
+}
+.transaction-management-content-checkout-title{
+    font-family: AcuminBlack;
+    font-size: 44px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: -10px;
+    cursor:default;
+    float: left;
+    max-width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.transaction-management-content-checkout-single-middle-box p{
+    font-family: AcuminBlack;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;    
+    border: 3px solid black;
+    cursor:default;
+}
+.transaction-management-content-checkout-price{
+    float: right;
+    font-family: AcuminBlack;
+    font-size: 44px;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 20px;
+    cursor:default;
+}
+.transaction-management-content-checkout-price-text{
+    font-family: AcuminBlack;
+    font-size: 26px;
+    letter-spacing: 1px;
+    float: right;
+    height: 30px;
+    margin-top: 20px;
+    cursor:default;
+}
+.transaction-management-content-checkout-payment-pin{
+    font-family: AcuminBlack;
+    font-size: 55px;
+    cursor:default;
+    margin: 0;
+    margin-top: 40px;
+    text-align: center;
+}
+.transaction-management-content-checkout-payment-text{
+    font-family: Acumin Light;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align:center;
+    margin: 0;
+    color: black;
+    cursor:default;
+    margin-bottom: 100px;
+    margin-top: -10px;
+}
+.transaction-management-content-checkout-courier{
+    width: 350px;
+    height: 50px;
+    border: 5px solid black;
+    font-family: AcuminBlack;
+    font-size: 25px;
+    cursor:default;
+    margin: 0;
+    text-align-last: center;
+    margin-bottom: 20px;
+}
+.transaction-management-content-checkout-package{
+    width: 350px;
+    height: 50px;
+    border: 5px solid black;
+    font-family: AcuminBlack;
+    font-size: 25px;
+    cursor:default;
+    margin: 0;
+    text-align-last: center;
+    margin-bottom: 20px;
+}
+.transaction-management-content-checkout-courier-price{
+    float: right;
+    font-family: AcuminBlack;
+    font-size: 44px;
+    letter-spacing: 1px;
+    margin: 0;
+    cursor:default;
+    margin-right: 50px;
+}
+.transaction-management-content-checkout-shipping-address{
+    width: 700px;
+    height: 120px;
+    border: 5px solid black;
+    resize: none;
+    padding: 10px;
+    font-family: AcuminBlack;
+    font-size: 25px;
+    cursor:default;
+    margin: 0;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.transaction-management-content-checkout-shipping-split-right p{
+    font-family: Proxima Nova;
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 60px;
+    color: black;
+    cursor:default;
+}
+.transaction-management-content-checkout-shipping-split-right a{
+    color: black;
+}
+.transaction-management-content-checkout-shipping-split-right a:hover{
+    color: black;
+    text-decoration: none;
+}
